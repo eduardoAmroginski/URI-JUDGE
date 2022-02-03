@@ -29,9 +29,7 @@ cardapio = [
 ]
 
 def busca_lanche(id):
-    for lanche in cardapio:
-        if lanche['id'] == id:
-            return lanche
+    return [lanche for lanche in cardapio if lanche['id'] == id][0]
 
 def get_preco_lanche(id):
     return float(busca_lanche(id)['preco'].replace("R$ ", ""))
