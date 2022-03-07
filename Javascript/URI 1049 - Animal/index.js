@@ -17,3 +17,4 @@ const verificaAnimal = ([esqueleto, tipo, alimentacao]) => {
 };
 
 verificaAnimal(dados);
+// Comentário Teste CZ
